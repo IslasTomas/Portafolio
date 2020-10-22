@@ -1,30 +1,39 @@
 <!DOCTYPE html>  <!-- aca definimos el tipo de documento "DOCTYPE EN ESTE CASO"-->
-<html>
+<html lang="es">  <!--lang definimos el idioma de la pag-->
+<meta charset="UTF-8"/>  <!--tipo de alfabeto que vamos a usar-->
     <head>
         <title>Tomas Islas</title>  <!-- titulo q va a tener la pestaña de la paguina-->
+        <link rel="icon" type= "imagen/png" href="imagenes/Logo1.png">  <!--favicom: imgane que aparece en la pestaña aldado del nombre-->
+        <!--rel: tipo de relacion type: indicamos tipo de archivo  href: ruta del icono/enlace-->
     </head>
     <body>
         <header>
+            <div>
+                <figure>
+                    <img src="imagenes/Logo1.png" width="100" height="50" alt="Logo de http:tomasislas.com">  <!--src : parte la ubicacion de donde esta indexxx referencia la ruta de la imagen q qeremos veralt= texto alternativo si no se logra cargar la imagen-->
+                </figure>
+            </div>
             <nav>   <!--para definir el menu-->
                 <ol>    <!--etiqueta para listas ordenadas-->
                     <li>    <!--item de la lista-->
-                        <a>Portafolio</a> <!--enlace a mi paguina interna o pag externa   -->
+                        <a href="#">Portafolio</a> <!--enlace a mi paguina interna o pag externa   -->
+                        <!--href es para dejar un enlace a otra paguina-->
                     </li>
                     <li>
-                        <a>Experiencia</a>
+                        <a href="#">Experiencia</a>
                     </li>
                     <li>
-                        <a>Trabajemos Juntos</a>
+                        <a href="#">Trabajemos Juntos</a>
                     </li>
                 </ol>
             </nav>
         </header>
         <section>
             <h1>  <!--etiqueta para titulos principales-->
-                Hola! Soy <strong>Tomas Islas</strong> Desarrollador <br/> con pasion por la tecnologia  
+                Hola! Soy <strong>Tomas Islas</strong> Desarrollador <br/> con pasion por la tecnologia
                  <!-- br  lo usamos para saltos de linea, strong : escribir en negrita-->
             </h1>
-            <img > Imagen de Portada<!--agregamos imagenes-->
+            <img src="imagenes/tomasPerfil.png" width="500" alt="imagen principal"/> <!--agregamos imagenes-->
         </section>
         <section>
             <h2>Protafolio (Proyectos Destacados)</h2>
@@ -32,23 +41,26 @@
                 <h3>RAFAM</h3>
                 <h6>Django Rest / React Hooks</h6>
                 <p><small><strong> Fecha:</strong> 01/09/2020</small></p>   <!-- p: los parrafos. small: para achicar la letra un poco corresponde al prupo de etiq text-->
-                <p><small><strong> Puedes Verlo en:</strong> www.rafam.gov.ar</small></p>   <!-- p: los parrafos. small: para achicar la letra un poco corresponde al prupo de etiq text-->
-                <p></p>
-                <p></p>
+                <p><small><strong> Puedes Verlo en:</strong> www.rafam.ec.gba.gov.ar</small></p>   <!-- p: los parrafos. small: para achicar la letra un poco corresponde al prupo de etiq text-->
+                <img src="imagenes/rafam.png" width="500" alt="imagen portada rafam"/>
             </article>
         </section>   <!--son las distintas secciones q vamos a tener dentro de la pag-->
         <section>
             <h2>Mas Sobre Mi Experiencia</h2>
             <article> 
                 <figure>  <!--padre de la img q sigue-->
-                    <img/>
+                    <img src="imagenes/disseño.png" width="500" alt="imagen diseño">
                 </figure>
                 <h3>Proyecto Cierre Cursada: Diseño De Sistemas</h3>
                 <p>Programador autodidacta en C# </p>
                 <a>Ver Proyecto</a> <!--etiqueta para redirigir al url del proyecto-->
             </article>
         </section>
-        <section>seccion contacto</section>
+        <section>
+            <form action="/suscripcion/">
+                <input type="Escribe algo aqui">  <!--entradas por la pag web-->
+            </form> <!-- formularios,  action es para indiicar como acceder al parametro  -->
+        </section>
         <footer>footer</footer>   <!--pie de paguina-->
     </body>
 </html>

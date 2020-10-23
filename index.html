@@ -16,14 +16,14 @@
             <nav>   <!--para definir el menu-->
                 <ol>    <!--etiqueta para listas ordenadas-->
                     <li>    <!--item de la lista-->
-                        <a href="#">Portafolio</a> <!--enlace a mi paguina interna o pag externa   -->
+                        <a href="./portafolio/index.html">Portafolio</a> <!--enlace a mi paguina interna o pag externa   -->
                         <!--href es para dejar un enlace a otra paguina-->
                     </li>
                     <li>
-                        <a href="#">Experiencia</a>
+                        <a href="#experiencia">Experiencia</a> <!--con el # indicamos q la referencia es a nuestra pag interna-->
                     </li>
                     <li>
-                        <a href="#">Trabajemos Juntos</a>
+                        <a href="#contacto">Trabajemos Juntos</a>
                     </li>
                 </ol>
             </nav>
@@ -35,7 +35,7 @@
             </h1>
             <img src="imagenes/tomasPerfil.png" width="500" alt="imagen principal"/> <!--agregamos imagenes-->
         </section>
-        <section>
+        <section id="portafolio">
             <h2>Protafolio (Proyectos Destacados)</h2>
             <article>  <!-- partes q pueden estar  aisladas-->
                 <h3>RAFAM</h3>
@@ -45,7 +45,7 @@
                 <img src="imagenes/rafam.png" width="500" alt="imagen portada rafam"/>
             </article>
         </section>   <!--son las distintas secciones q vamos a tener dentro de la pag-->
-        <section>
+        <section id="experiencia">
             <h2>Mas Sobre Mi Experiencia</h2>
             <article> 
                 <figure>  <!--padre de la img q sigue-->
@@ -53,15 +53,16 @@
                 </figure>
                 <h3>Proyecto Cierre Cursada: Diseño De Sistemas</h3>
                 <p>Programador autodidacta en C# </p>
-                <a>Ver Proyecto</a> <!--etiqueta para redirigir al url del proyecto-->
+                <a href="https://www.youtube.com/watch?v=35XFAkwmU4c&ab_channel=JavierAbancens">Ver Proyecto</a> <!--etiqueta para redirigir al url del proyecto-->
+                <a href="https://www.youtube.com/watch?v=35XFAkwmU4c&ab_channel=JavierAbancens" target="_blank">Ver Proyecto en nueva pestaña</a>
             </article>
         </section>
-        <section>
+        <section id="contacto">  <!--el id lo usamos para dirigirnos a esta seccion de codigo-->
             <form action="/suscripcion/"> <!--donde se envian ls formularios-->
-                <label for="email">Dejame tu email</label> <!--nos pone texto al lado de la casilla donde podemos referenciar la casilla-->
-                <input type="file" placeholder="Dejame tu email" id="email" >  <!--entradas por la pag web   placeholder: muestra msj en la caja-->  
+                <h3>¿Creamos Algo Juntos?</h3>
+                <input type="text" placeholder="Dejame tu email" id="email" >  <!--entradas por la pag web   placeholder: muestra msj en la caja-->  
                 <!--value= "@gmail"con Value podemos dejar un valor  por defecto  pero pisa el placeholder-->
-                <input type="text" value="texto del boton"> <!--asi tmb podemos hace el boton-->
+               <!-- <input type="text" value="texto del boton"> asi tmb podemos hace el boton-->
                 <button>Enviar</button>  <!--agrregamos un boton sobre el form-->
             </form> <!-- formularios,  action es para indiicar como acceder al parametro  -->
         </section>

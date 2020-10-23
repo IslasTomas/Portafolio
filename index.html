@@ -57,8 +57,12 @@
             </article>
         </section>
         <section>
-            <form action="/suscripcion/">
-                <input type="Escribe algo aqui">  <!--entradas por la pag web-->
+            <form action="/suscripcion/"> <!--donde se envian ls formularios-->
+                <label for="email">Dejame tu email</label> <!--nos pone texto al lado de la casilla donde podemos referenciar la casilla-->
+                <input type="file" placeholder="Dejame tu email" id="email" >  <!--entradas por la pag web   placeholder: muestra msj en la caja-->  
+                <!--value= "@gmail"con Value podemos dejar un valor  por defecto  pero pisa el placeholder-->
+                <input type="text" value="texto del boton"> <!--asi tmb podemos hace el boton-->
+                <button>Enviar</button>  <!--agrregamos un boton sobre el form-->
             </form> <!-- formularios,  action es para indiicar como acceder al parametro  -->
         </section>
         <footer>footer</footer>   <!--pie de paguina-->

@@ -1,0 +1,3 @@
+header {
+    background: rgb(165, 42, 134); /*!important:  rompe la cascada de los estilos y pisa a los demas estulos */  
+}

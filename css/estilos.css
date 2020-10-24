@@ -1,3 +1,26 @@
-header {
-    background: rgb(165, 42, 134); /*!important:  rompe la cascada de los estilos y pisa a los demas estulos */  
-}
+/*
+reglas:  conformadas de
+    selectores: formas de identificar elementos del html 1 o mas "selector{}"
+        declaraciones: lo que hace con lo obtenido por el selector "{}"
+        proppiedades: cosas particulares para hacer con los elementos  "background"
+            valores: lo que se espera recibir las propiedades para actuar de forma correcta  "red"
+*/
+header { /* header es un selector*/
+/*background,color es un propierdad*/    
+background: pink; /*!important:  rompe la cascada de los estilos y pisa a los demas estulos */  
+color: red;
+/*el color definido es un valor*/
+/*las llaves son una declaracion*/    }  
+/* todo esto es una regla header{}*/
+
+/*selector de etiqueta "header - section - article - nav" siplemente con el nombre de la etiqueta    */
+
+/*selector descendente */
+/*body header div nav ol li a  */
+
+/*en html class es un atributo de la etiqueta  */
+/* selector de clases lo identificamos con . */
+/* .link */
+
+/* selecto de id # */
+/* #portafolio */

@@ -18,3 +18,12 @@ h1 {
     text-transform: capitalize; /* tranforma el texto(mayuscula,minusculas,primera letra mayus ...) */
     text-decoration: solid; /* decoraciones que le hacemos al texto */
  }
+ .project-detail {
+    width: 500px;
+ }
+ .project-imageContainer {
+    width: 500px;
+ }
+ .hero {
+     height: 300px;
+ }

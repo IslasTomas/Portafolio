@@ -11,8 +11,9 @@
     <!--rel: tipo de relacion type: indicamos tipo de archivo  href: ruta del icono/enlace-->
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/estilos.css">
- 
+
 </head>
+
 <body>
     <header class="header">
         <div>
@@ -47,23 +48,28 @@
             Hola! Soy <strong>Tomas Islas</strong> Desarrollador <br /> con pasion por la tecnologia
             <!-- br  lo usamos para saltos de linea, strong : escribir en negrita-->
         </h1>
-        <img src="imagenes/tomasPerfil.png" width="500" alt="imagen principal" />
-        <!--agregamos imagenes-->
+<!--         <img src="imagenes/tomasPerfil.png" width="500" alt="imagen principal" />
+ -->        <!--agregamos imagenes-->
     </section>
     <section id="portafolio" class="portolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
         <article class="project">
             <!-- partes q pueden estar  aisladas-->
-            <h3 class="project-tittle">RAFAM</h3>
-            <h6 class="project-course">Django Rest / React Hooks</h6>
-            <p class="project-date"><small><strong> Fecha:</strong> 01/09/2020</small></p>
-            <!-- p: los parrafos. small: para achicar la letra un poco corresponde al prupo de etiq text-->
-            <p class="project-url"><small><strong> Puedes Verlo en:</strong> www.rafam.ec.gba.gov.ar</small></p>
-            <p class="project-description">RAFAM es un sistema para el manejo presupuestario de los municipios de la provincia de Buesnos Aires</p>
-            <!-- p: los parrafos. small: para achicar la letra un poco corresponde al prupo de etiq text-->
-            <figure class="project-imageContainer">
-                <img class="project-image" src="imagenes/rafam.png" width="500" alt="imagen portada rafam" />
-            </figure>
+            <div class="project-detail">
+                <h3 class="project-tittle">RAFAM</h3>
+                <h6 class="project-course">Django Rest / React Hooks</h6>
+                <p class="project-date"><small><strong> Fecha:</strong> 01/09/2020</small></p>
+                <!-- p: los parrafos. small: para achicar la letra un poco corresponde al prupo de etiq text-->
+                <p class="project-url"><small><strong> Puedes Verlo en:</strong> www.rafam.ec.gba.gov.ar</small></p>
+                <p class="project-description">RAFAM es un sistema para el manejo presupuestario de los municipios de la
+                    provincia de Buesnos Aires</p>
+            </div>
+            <div class="project-imageContainer">
+                <figure >
+                    <img class="project-image" src="imagenes/rafam.png" width="500" alt="imagen portada rafam" />
+                </figure>
+            </div>
+
         </article>
     </section>
     <!--son las distintas secciones q vamos a tener dentro de la pag-->
@@ -75,8 +81,10 @@
                 <img class="experience-image" src="imagenes/disseño.png" width="500" alt="imagen diseño">
             </figure>
             <h3 class="experience-tittle">Proyecto Cierre Cursada: Diseño De Sistemas</h3>
-            <p class="experience-description">Este es un Proyecto realizado para el cierre de cursada de diseño de sistemas de la UTN-FRLP </p>
-            <a class="experience-url" href="https://www.youtube.com/watch?v=35XFAkwmU4c&ab_channel=JavierAbancens">Ver Proyecto</a>
+            <p class="experience-description">Este es un Proyecto realizado para el cierre de cursada de diseño de
+                sistemas de la UTN-FRLP </p>
+            <a class="experience-url" href="https://www.youtube.com/watch?v=35XFAkwmU4c&ab_channel=JavierAbancens">Ver
+                Proyecto</a>
             <!--etiqueta para redirigir al url del proyecto-->
             <a href="https://www.youtube.com/watch?v=35XFAkwmU4c&ab_channel=JavierAbancens" target="_blank">Ver Proyecto
                 en nueva pestaña</a>

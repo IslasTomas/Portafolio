@@ -9,18 +9,18 @@
     <link rel="icon" type="imagen/png" href="imagenes/Logo1.png">
     <!--favicom: imgane que aparece en la pestaña aldado del nombre-->
     <!--rel: tipo de relacion type: indicamos tipo de archivo  href: ruta del icono/enlace-->
-    
+    <link rel="stylesheet" href="./css/estilos.css">
  
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
             <figure>
                 <img src="imagenes/Logo1.png" width="100" height="50" alt="Logo de http:tomasislas.com">
                 <!--src : parte la ubicacion de donde esta indexxx referencia la ruta de la imagen q qeremos veralt= texto alternativo si no se logra cargar la imagen-->
             </figure>
         </div>
-        <nav>
+        <nav class="menu">
             <!--para definir el menu-->
             <ol>
                 <!--etiqueta para listas ordenadas-->
@@ -40,7 +40,7 @@
             </ol>
         </nav>
     </header>
-    <section>
+    <section class="hero">
         <h1>
             <!--etiqueta para titulos principales-->
             Hola! Soy <strong>Tomas Islas</strong> Desarrollador <br /> con pasion por la tecnologia
@@ -49,38 +49,41 @@
         <img src="imagenes/tomasPerfil.png" width="500" alt="imagen principal" />
         <!--agregamos imagenes-->
     </section>
-    <section id="portafolio">
-        <h2>Protafolio (Proyectos Destacados)</h2>
-        <article>
+    <section id="portafolio" class="portolio">
+        <h2>Portafolio (Proyectos Destacados)</h2>
+        <article class="project">
             <!-- partes q pueden estar  aisladas-->
-            <h3>RAFAM</h3>
-            <h6>Django Rest / React Hooks</h6>
-            <p><small><strong> Fecha:</strong> 01/09/2020</small></p>
+            <h3 class="project-tittle">RAFAM</h3>
+            <h6 class="project-course">Django Rest / React Hooks</h6>
+            <p class="project-date"><small><strong> Fecha:</strong> 01/09/2020</small></p>
             <!-- p: los parrafos. small: para achicar la letra un poco corresponde al prupo de etiq text-->
-            <p><small><strong> Puedes Verlo en:</strong> www.rafam.ec.gba.gov.ar</small></p>
+            <p class="project-url"><small><strong> Puedes Verlo en:</strong> www.rafam.ec.gba.gov.ar</small></p>
+            <p class="project-description">RAFAM es un sistema para el manejo presupuestario de los municipios de la provincia de Buesnos Aires</p>
             <!-- p: los parrafos. small: para achicar la letra un poco corresponde al prupo de etiq text-->
-            <img src="imagenes/rafam.png" width="500" alt="imagen portada rafam" />
+            <figure class="project-imageContainer">
+                <img class="project-image" src="imagenes/rafam.png" width="500" alt="imagen portada rafam" />
+            </figure>
         </article>
     </section>
     <!--son las distintas secciones q vamos a tener dentro de la pag-->
     <section id="experiencia">
         <h2>Mas Sobre Mi Experiencia</h2>
-        <article>
-            <figure>
+        <article class="experience">
+            <figure class="experience-imageContainer">
                 <!--padre de la img q sigue-->
-                <img src="imagenes/disseño.png" width="500" alt="imagen diseño">
+                <img class="experience-image" src="imagenes/disseño.png" width="500" alt="imagen diseño">
             </figure>
-            <h3>Proyecto Cierre Cursada: Diseño De Sistemas</h3>
-            <p>Programador autodidacta en C# </p>
-            <a href="https://www.youtube.com/watch?v=35XFAkwmU4c&ab_channel=JavierAbancens">Ver Proyecto</a>
+            <h3 class="experience-tittle">Proyecto Cierre Cursada: Diseño De Sistemas</h3>
+            <p class="experience-description">Este es un Proyecto realizado para el cierre de cursada de diseño de sistemas de la UTN-FRLP </p>
+            <a class="experience-url" href="https://www.youtube.com/watch?v=35XFAkwmU4c&ab_channel=JavierAbancens">Ver Proyecto</a>
             <!--etiqueta para redirigir al url del proyecto-->
             <a href="https://www.youtube.com/watch?v=35XFAkwmU4c&ab_channel=JavierAbancens" target="_blank">Ver Proyecto
                 en nueva pestaña</a>
         </article>
     </section>
-    <section id="contacto">
+    <section id="contacto" class="contact">
         <!--el id lo usamos para dirigirnos a esta seccion de codigo-->
-        <form action="/suscripcion/">
+        <form action="/suscripcion/" class="form-email">
             <!--donde se envian ls formularios-->
             <h3>¿Creamos Algo Juntos?</h3>
             <input type="text" placeholder="Dejame tu email" id="email">

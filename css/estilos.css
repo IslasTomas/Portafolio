@@ -1,26 +1,20 @@
-/*
-reglas:  conformadas de
-    selectores: formas de identificar elementos del html 1 o mas "selector{}"
-        declaraciones: lo que hace con lo obtenido por el selector "{}"
-        proppiedades: cosas particulares para hacer con los elementos  "background"
-            valores: lo que se espera recibir las propiedades para actuar de forma correcta  "red"
-*/
-header { /* header es un selector*/
-/*background,color es un propierdad*/    
-background: pink; /*!important:  rompe la cascada de los estilos y pisa a los demas estulos */  
-color: red;
-/*el color definido es un valor*/
-/*las llaves son una declaracion*/    }  
-/* todo esto es una regla header{}*/
+body {
+    font-family:'Source Sans Pro', sans-serif ; /* implementamos en todo el body la fuente que linkeamos en el html */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;  /* cambiamos el estilo de la fuente, debemos trael el estilo de fonts.google */
+} /* a todos los h les pusimos la fuente Fjalla one  de no poder intente con la sans-serif */
 
-/*selector de etiqueta "header - section - article - nav" siplemente con el nombre de la etiqueta    */
-
-/*selector descendente */
-/*body header div nav ol li a  */
-
-/*en html class es un atributo de la etiqueta  */
-/* selector de clases lo identificamos con . */
-/* .link */
-
-/* selecto de id # */
-/* #portafolio */
+h1 {
+    font-size: 40px; /* tamaño de la fuentes */
+    line-height: 1.5;  /* el tamaño del interlineado  1=%100 de fuente original */
+    letter-spacing: -.2px; /* espacio entre letras */
+    text-transform: capitalize; /* tranforma el texto(mayuscula,minusculas,primera letra mayus ...) */
+    text-decoration: solid; /* decoraciones que le hacemos al texto */
+ }

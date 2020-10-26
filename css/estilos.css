@@ -22,7 +22,14 @@ h1 {
     letter-spacing: -.2px; /* espacio entre letras */
     text-decoration: solid; /* decoraciones que le hacemos al texto */
     /*text-transform: capitalize;  tranforma el texto(mayuscula,minusculas,primera letra mayus ...) */
- }
+    color: white;
+    /*margin: arriba derecha abajo izquierda; asi definimos los pargenes indicando el tamaño */
+    margin-top: 0%;
+    margin-right: 520px;
+    margin-left: 0%;
+    margin-bottom: 2px;
+    
+}
  .project {
      /*border: tamaño tipo color 
      border-top: 10px solid red 
@@ -33,16 +40,16 @@ h1 {
      */
      border: 1px solid gray;
      border-radius: 10px;  /* Esto es para redondear los bordes */
+     margin-bottom: 10px;
  }
  .project-detail {
     width: 500px;
  }
  .project-imageContainer {
     width: 500px;
+    
  }
- h1 {
-    color: white;
- }
+ 
  h1 strong {
      color: #026fff
  }
@@ -57,4 +64,20 @@ h1 {
  .header {  /* color del header */
      background-color: #1d252c ;  
      color: white;
+     margin: 0%;
  }
+.header ol {
+    margin: 0%;
+}
+.experience {
+    border: 1px solid gray;
+     border-radius: 10px;  /* Esto es para redondear los bordes */
+     margin-bottom: 10px;
+}
+
+.contact {
+    border: 1px solid gray;
+     border-radius: 10px;  /* Esto es para redondear los bordes */
+     margin-bottom: 10px;
+
+}

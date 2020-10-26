@@ -2,8 +2,10 @@
 /*   gris oscuro = #1d252c
      gris claro = # 626262
      background gris = #1b2127
-     celeste = #026fff*/
+     celeste = #026fff
+     background gris claro0 #fafafa*/
 body {
+    margin: 0;
     font-family:'Source Sans Pro', sans-serif ; /* implementamos en todo el body la fuente que linkeamos en el html */
 }
 h1,
@@ -30,6 +32,9 @@ h1 {
     margin-bottom: 2px;
     
 }
+.portolio {
+    background-color: #fcfaff;
+}
  .project {
      /*border: tamaño tipo color 
      border-top: 10px solid red 
@@ -40,8 +45,12 @@ h1 {
      */
      border: 1px solid gray;
      border-radius: 10px;  /* Esto es para redondear los bordes */
-     margin-bottom: 10px;
- }
+     margin: 10px; /* separacion del border hacia adentro */ 
+     margin-bottom: 15px;
+     padding: 20px;  /* pagging es el relleno , separacion desde el border hacia adentro */
+        /* el paddin tiene las mismas definiciones que el margin */
+        background: white;
+    }
  .project-detail {
     width: 500px;
  }

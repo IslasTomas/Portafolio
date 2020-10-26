@@ -14,6 +14,10 @@ body {
     display: flex;  /* ubica las cosas sobre la misma linea */
 /*     flex-direction: column ; quedan en columna */
     flex-wrap: wrap;  /* cuando ya no entra en la linea , lo baja a la siguiente */
+    justify-content: center; /* cen reparete empesando desde el centro */
+    /* justify-content: space-evenly;/*  mismo espaciado entre todos los elementos, incluso en primero y fin */
+    justify-content: space-around;/* mismo espaciado entre todos los elementos y la mitad en el primero y ultimo */
+    /*justify-content: space-between;/*  espaciado de elementos menos en el primero y el ultimo */
 }
 .box {
     height: 50px;
@@ -21,7 +25,7 @@ body {
     border: 2px solid red;
     margin: 5px;
     flex-shrink: 0; /* defino que no se puede achicar  aunque el flex lo quiera */
-
+     
 }
 h1,
 h2,

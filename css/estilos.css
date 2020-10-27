@@ -18,6 +18,8 @@ body {
     /* justify-content: space-evenly;/*  mismo espaciado entre todos los elementos, incluso en primero y fin */
     justify-content: space-around;/* mismo espaciado entre todos los elementos y la mitad en el primero y ultimo */
     /*justify-content: space-between;/*  espaciado de elementos menos en el primero y el ultimo */
+    align-items: center; /* asi alineamos en forma vertical */
+    border:  1px solid blue;
 }
 .box {
     height: 50px;

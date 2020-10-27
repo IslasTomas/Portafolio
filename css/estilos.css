@@ -79,7 +79,7 @@ gris oscuro = #1d252c
 
 
 .hero {
-    height: 300px;
+    height: 200px;
     background-image: url('../imagenes/tomasPerfil.png');
     background-size: 300px;
     background-color: #1d252c ;
@@ -101,7 +101,14 @@ h6 {
     font-family: 'Fjalla One', sans-serif;
     font-weight: normal;  /* cambiamos el estilo de la fuente, debemos trael el estilo de fonts.google */
 } /* a todos los h les pusimos la fuente Fjalla one  de no poder intente con la sans-serif */
-
+h2 {
+    color: #026fff;
+    text-transform: uppercase; /* casa letra va a empezar con mayus */
+    font-family:'Source Sans Pro', sans-serif ;
+    font-weight: bold; /*  pone el texto en negrita */
+    font-size: 24px;
+    margin-bottom: 40px; 
+}
 h1 {
     font-size: 40px; /* tamaño de la fuentes */
     line-height: 1.5;  /* el tamaño del interlineado  1=%100 de fuente original */
@@ -119,6 +126,7 @@ h1 {
 }
 .portolio {
     background-color: #fcfaff;
+    padding: 20px;
 }
  .project {
      /*border: tamaño tipo color 
@@ -130,20 +138,40 @@ h1 {
      */
      border: 1px solid gray;
      border-radius: 10px;  /* Esto es para redondear los bordes */
-     margin: 10px; /* separacion del border hacia adentro */ 
+     /*margin: 10px;  separacion del border hacia adentro */ 
      margin-bottom: 15px;
-     padding: 20px;  /* pagging es el relleno , separacion desde el border hacia adentro */
+     padding: 20px; /*  pagging es el relleno , separacion desde el border hacia adentro */
         /* el paddin tiene las mismas definiciones que el margin */
-        background: white;
+     background: white;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
     }
+.project-course,
+.project-date,
+.project-url { 
+    margin: 10px 0;
+    }
+{
+    margin: 10px 0;
+}
+
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
  .project-detail {
     width: 500px;
  }
- .project-imageContainer {
-    width: 500px;
-    
- }
- 
+.project-description {
+    font-size: 20px;
+}
+
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
+}
  h1 strong {
      color: #026fff
  }

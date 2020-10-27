@@ -152,11 +152,11 @@ h1 {
 .project-url { 
     margin: 10px 0;
     }
-{
-    margin: 10px 0;
+
+.project-image {
+    width: 300px;
+    border-radius: 10px;
 }
-
-
 .project-title {
     font-size: 30px;
     margin-top: 0;
@@ -176,13 +176,48 @@ h1 {
      color: #026fff
  }
 
-
-.experience {
-    border: 1px solid gray;
-     border-radius: 10px;  /* Esto es para redondear los bordes */
-     margin-bottom: 10px;
+.experience-list {
+    display: flex;
 }
-
+.experience {
+   
+     /* border-radius: 10px;  /* Esto es para redondear los bordes * */
+     background-color: #f4fbff;
+     margin: 10px;
+     width: 480px;
+     flex-shrink: 0;/* PARA QUE NO SE MODIFIQUE SU TAMAÑO */
+     border-radius: 10px; /* redondea las puntas del borde */
+     overflow: hidden;  /* recorda todo lo q sobresalda del border */
+    }
+.experience-list-title {
+    margin-left: 20px;
+}
+.experience-image {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 480px;
+    height: 200px;
+    object-fit: cover ; /* acomoda la imagen para que se vea proporcional */
+}
+.experience-detail {
+    background-color: white;
+    margin: 20px 40px;
+    margin-top: -40px;
+    position: relative;  /* pobrepone el objeto sobre el otro menos el magen y el relleno */
+    padding: 20px;
+    text-align: center; /* alinea el texto */
+}
+.experience-description {
+    text-align: left;
+}
+.experience-url{
+    border: 1px solid ;
+    padding: 5px 20px;
+    text-decoration: none;
+    color :#056fff;
+    border-radius: 5px;
+}
 .contact {
     border: 1px solid gray;
      border-radius: 10px;  /* Esto es para redondear los bordes */

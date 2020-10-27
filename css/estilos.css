@@ -34,7 +34,7 @@ gris oscuro = #1d252c
 .header {
     background-color: #1d252c ;  
      color: white;
-     height: 90px;
+     height: 70px;
     margin: 0%;
     display: flex;
     justify-content: space-between;
@@ -42,6 +42,7 @@ gris oscuro = #1d252c
     padding: 0;
     border: 0;
 }
+
 .header ol  {
     border: 0;
     margin: 0;
@@ -59,7 +60,7 @@ gris oscuro = #1d252c
     display: flex;
     align-items: center;
     height: inherit;
-    padding: 0 10px;  /* lo rellenamos para que  las opciones dle menu no esten todas juntas */
+    padding: 0 10px;  /* lo rellenamos para que  las opciones dle menu no esten todas juntasgit */
     
 }
 .header  figure{
@@ -67,6 +68,9 @@ gris oscuro = #1d252c
     padding: 0;
     border: 0;
     height: 90px;
+    display: flex;
+    align-items: center;
+    
 }
 .menu {
     height: inherit;
@@ -74,6 +78,16 @@ gris oscuro = #1d252c
 }
 
 
+.hero {
+    height: 300px;
+    background-image: url('../imagenes/tomasPerfil.png');
+    background-size: 300px;
+    background-color: #1d252c ;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex ;
+    align-items: center;
+}
 
 
  
@@ -95,12 +109,13 @@ h1 {
     text-decoration: solid; /* decoraciones que le hacemos al texto */
     /*text-transform: capitalize;  tranforma el texto(mayuscula,minusculas,primera letra mayus ...) */
     color: white;
+    margin: 0;
     /*margin: arriba derecha abajo izquierda; asi definimos los pargenes indicando el tamaño */
-    margin-top: 0%;
+   /*  margin-top: 0%;
     margin-right: 520px;
     margin-left: 0%;
     margin-bottom: 2px;
-    padding: 10px;
+    padding: 10px; */
 }
 .portolio {
     background-color: #fcfaff;
@@ -132,14 +147,6 @@ h1 {
  h1 strong {
      color: #026fff
  }
- .hero {
-     height: 300px;
-     background-image: url('../imagenes/tomasPerfil.png');
-     background-size: 300px;
-     background-color: #1d252c ;
-     background-repeat: no-repeat;
-     background-position: right;
- }
 
 
 .experience {
@@ -154,3 +161,11 @@ h1 {
      margin-bottom: 10px;
 
 }
+.footer {
+    background-color: #1b2127 ;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* a las img se les puede dar un alineado vertical con "vertical-align" */

@@ -6,29 +6,78 @@ gris oscuro = #1d252c
      background gris = #1b2127
      celeste = #026fff
      background gris claro0 #fafafa*/
-body {
+
+     body {
     margin: 0;
     font-family:'Source Sans Pro', sans-serif ; /* implementamos en todo el body la fuente que linkeamos en el html */
 }
+/* 
 .flexbox {
-    display: flex;  /* ubica las cosas sobre la misma linea */
-/*     flex-direction: column ; quedan en columna */
-    flex-wrap: wrap;  /* cuando ya no entra en la linea , lo baja a la siguiente */
-    justify-content: center; /* cen reparete empesando desde el centro */
-    /* justify-content: space-evenly;/*  mismo espaciado entre todos los elementos, incluso en primero y fin */
-    justify-content: space-around;/* mismo espaciado entre todos los elementos y la mitad en el primero y ultimo */
-    /*justify-content: space-between;/*  espaciado de elementos menos en el primero y el ultimo */
-    align-items: center; /* asi alineamos en forma vertical */
-    border:  1px solid blue;
+    display: flex;   ubica las cosas sobre la misma linea 
+     flex-direction: column ; quedan en columna 
+    flex-wrap: wrap;   cuando ya no entra en la linea , lo baja a la siguiente 
+    justify-content: center;  cen reparete empesando desde el centro 
+    /* justify-content: space-evenly;  mismo espaciado entre todos los elementos, incluso en primero y fin 
+    justify-content: space-around; mismo espaciado entre todos los elementos y la mitad en el primero y ultimo */
+    /*justify-content: space-between;/*  espaciado de elementos menos en el primero y el ultimo 
+    align-items: center; /* asi alineamos en forma vertical 
+    border:  1px solid blue; 
 }
 .box {
     height: 50px;
     width: 50px;
     border: 2px solid red;
     margin: 5px;
-    flex-shrink: 0; /* defino que no se puede achicar  aunque el flex lo quiera */
-     
+    flex-shrink: 0; /* defino que no se puede achicar  aunque el flex lo quiera 
+    align-self: flex-star; /* definimos en que lugar se ubicara, sin iumprotar lo que tenga definido el padre 
+}*/
+.header {
+    background-color: #1d252c ;  
+     color: white;
+     height: 90px;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 0;
+    border: 0;
 }
+.header ol  {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;  /* definimos que no tenga ningun stilo el texto(subrayados y demas) */
+    display: flex;
+    height: inherit;
+}
+.header ol li {
+    height: inherit; /* hereda el alto de tu padre */
+}
+.header a {     /* HACEMOS QUE QLE ALTO SEA IGUAL Q EL HEADER PARA ESO TODOS SUS PADRE, */
+    color: white; /* DEBEN TENER EL ALTO HEREDADO Y LA POSICION LA DEFINIMOS ACA */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;  /* lo rellenamos para que  las opciones dle menu no esten todas juntas */
+    
+}
+.header  figure{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 90px;
+}
+.menu {
+    height: inherit;
+    display: flex;
+}
+
+
+
+
+ 
+
 h1,
 h2,
 h3,
@@ -91,14 +140,8 @@ h1 {
      background-repeat: no-repeat;
      background-position: right;
  }
- .header {  /* color del header */
-     background-color: #1d252c ;  
-     color: white;
-     margin: 0%;
- }
-.header ol {
-    margin: 0%;
-}
+
+
 .experience {
     border: 1px solid gray;
      border-radius: 10px;  /* Esto es para redondear los bordes */

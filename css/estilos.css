@@ -80,13 +80,17 @@ gris oscuro = #1d252c
 
 .hero {
     height: 200px;
-    background-image: url('../imagenes/tomasPerfil.png');
-    background-size: 300px;
+/*     background-image: url('../imagenes/tomasPerfil.png');
+background-repeat: no-repeat;
+     background-si  ze: 300px; */
     background-color: #1d252c ;
-    background-repeat: no-repeat;
     background-position: right;
     display: flex ;
     align-items: center;
+    justify-content: space-between;
+}
+.hero img{
+    object-fit: cover ;  /* arregla las proporciones de la foto */
 }
 
 
@@ -126,7 +130,7 @@ h1 {
 }
 .portolio {
     background-color: #fcfaff;
-    padding: 20px;
+    padding-top: 20px;
 }
  .project {
      /*border: tamaño tipo color 
@@ -178,6 +182,7 @@ h1 {
 
 .experience-list {
     display: flex;
+    flex-wrap: wrap;
 }
 .experience {
    
@@ -212,7 +217,7 @@ h1 {
     text-align: left;
 }
 .experience-url{
-    border: 1px solid ;
+     border: 1px solid ; 
     padding: 5px 20px;
     text-decoration: none;
     color :#056fff;
@@ -278,3 +283,16 @@ h1 {
     justify-content: space-between;
 }
 /* a las img se les puede dar un alineado vertical con "vertical-align" */
+.container {
+/*     border: 1px solid red;
+ */    width: 1000px;
+    margin: 0 auto; /* el auto lo centra  */
+    display: inherit;
+    justify-content: inherit;
+    height: inherit;
+    align-items: inherit;
+    padding: inherit;
+    flex-wrap: inherit;
+    
+
+}
